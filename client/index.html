@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Button List with Descriptions</title>
+  <style>
+    /* Add your custom CSS styles here, if needed */
+    body, html {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container h-100">
+    <h2 class="text-center mb-4">Events you need to capture at a player/device level:</h2>
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Days</p>
+        <p class="mb-0">Data: Current Day</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "days-event" class="btn btn-primary btn-block">Days</button>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Land selection screen access</p>
+        <p class="mb-0">Data: current day, land selection screen access 0/1</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "land-selection" class="btn btn-primary btn-block">Land selection screen access</button>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Node Interaction</p>
+        <p class="mb-0">Data: day, land(s), cost</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "node-interaction" class="btn btn-primary btn-block">Node Interaction</button>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Land Purchase</p>
+        <p class="mb-0">Data: day, land(s), cost, purchase</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "land-purchase" class="btn btn-primary btn-block">Land Purchase</button>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Harvest</p>
+        <p class="mb-0">Data: day, land, cost of harvest, time to harvest</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "harvest-land" class="btn btn-primary btn-block">Harvest Land</button>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Resource Generated</p>
+        <p class="mb-0">Data: day, resource, expiration</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "resource-generated" class="btn btn-primary btn-block">Resource Generated</button>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Resource sold</p>
+        <p class="mb-0">Data: day, resource, cost, sold to</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "resource-sold" class="btn btn-primary btn-block">Resource sold</button>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Resource Purchased</p>
+        <p class="mb-0">Data: day, resource, cost, bought by</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "resource-purchase" class="btn btn-primary btn-block">Resource Purchased</button>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Resource Delivered</p>
+        <p class="mb-0">Data: day, resource, earning, time left</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "resource-delivered" class="btn btn-primary btn-block">Resource Delivered</button>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Generate Offer</p>
+        <p class="mb-0">Data: day, resource, quantity, timeline, reward</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "generate-offer" class="btn btn-primary btn-block">Generate Offer</button>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Offer Accepted</p>
+        <p class="mb-0">Data: day, resource, quantity, reward</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "offer-accepted" class="btn btn-primary btn-block">Offer Accepted</button>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Offer Delivered</p>
+        <p class="mb-0">Data: day, resource, quantity, reward</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "deliver-offer" class="btn btn-primary btn-block">Offer Delivered</button>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-sm-10">
+        <p class="mb-0 text-primary">Offer Expiry</p>
+        <p class="mb-0">Data: day, resource, quantity, reward</p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" id = "expiry-offer" class="btn btn-primary btn-block">Offer Expiry</button>
+      </div>
+    </div>
+  <!-- Bootstrap JS and Popper.js (Optional, for certain Bootstrap features like dropdowns) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src = '/socket.io/socket.io.js'></script>
+  <script src = '/script.js' type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+    "name": "evolve",
+    "version": "0.0.1",
+    "private": true,
+    "main": "server",
+    "scripts": {
+        "start": "node server.js",
+        "staging": "NODE_ENV=staging node server.js",
+        "prod": "NODE_ENV=production node server.js"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "bcrypt-nodejs": "*",
+        "bluebird": "*",
+        "body-parser": "*",
+        "express": "4.*",
+        "fs": "*",
+        "helmet": "^3.13.0",
+        "http": "*",
+        "moment": "2.*",
+        "multer": "*",
+        "mysql2": "^3.6.5",
+        "request": "2.*",
+        "socket.io": "1.*",
+        "striptags": "2.*",
+        "underscore": "*",
+        "validatorjs": "*"
+    }
+}

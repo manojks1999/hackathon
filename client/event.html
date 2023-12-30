@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" 
+        content="width=device-width, 
+                 initial-scale=1, 
+                 shrink-to-fit=no"> 
+  <title> 
+    load data from json file  
+    into a bootstrap table 
+  </title> 
+  
+  <!-- Include Bootstrap for styling -->
+  <link rel="stylesheet"
+        href= 
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+  
+  <!-- Include the Bootstrap Table CSS 
+  for the table -->
+  <link rel="stylesheet" 
+        href= 
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css"> 
+</head> 
+<body> 
+  <div class="container"> 
+    <h1 class="text text-success text-center "> 
+      Event Capture Dashboard
+    </h1> 
+    <h6 class="text text-success text-center"> 
+      All captured events table ordered in non decending order with respect to time
+    </h6> 
+      <table class="table-striped border-success"> 
+        <thead> 
+          <tr> 
+            <th data-field="id"> 
+              <span class="text-success"> 
+                Event ID
+              </span> 
+            </th> 
+            <th data-field="userid"> 
+              <span class="text-success"> 
+                User ID  
+              </span> 
+            </th> 
+            <th data-field="event_name"> 
+              <span class="text-success"> 
+                Event Name
+              </span> 
+            </th> 
+            <th data-field="created_at"> 
+              <span class="text-success"> 
+                Created At
+              </span> 
+            </th> 
+            <th data-field="data"> 
+              <span class="text-success"> 
+                Collected Data
+              </span> 
+            </th> 
+            <th data-field="game_id"> 
+              <span class="text-success"> 
+                Game Id
+              </span> 
+            </th> 
+          </tr> 
+        </thead> 
+      </table> 
+  </div> 
+  
+  <!-- Include jQuery and other required 
+  files for Bootstrap -->
+  <script src= 
+"https://code.jquery.com/jquery-3.3.1.min.js"> 
+  </script> 
+  <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+  </script> 
+  <script src= 
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+  </script> 
+  
+  <!-- Include the JavaScript file 
+  for Bootstrap table -->
+  <script src= 
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"> 
+  </script> 
+  <script type="text/javascript"> 
+    $(document).ready(async function() { 
+  
+      // Use the given data to create  
+      // the table and display it 
+      let response = await fetch('http://localhost:3002/db_data');
+      let mydata = await response.json();
+      $('table').bootstrapTable({ 
+        data: mydata 
+      }); 
+    });
+  </script> 
+</body> 
+</html>

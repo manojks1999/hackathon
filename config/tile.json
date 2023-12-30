@@ -1,0 +1,290 @@
+[
+    {
+        "lane": 1,
+        "tile": "forest",
+        "ids": [
+            0,
+            7,
+            8
+        ]
+    },
+    {
+        "lane": 1,
+        "tile": "plain",
+        "ids": [
+            1,
+            8,
+            9
+        ]
+    },
+    {
+        "lane": 1,
+        "tile": "farm",
+        "ids": [
+            2,
+            9,
+            10
+        ]
+    },
+    {
+        "lane": 1,
+        "tile": "lake",
+        "ids": [
+            3,
+            10,
+            11
+        ]
+    },
+    {
+        "lane": 1,
+        "tile": "earth",
+        "ids": [
+            4,
+            11,
+            12
+        ]
+    },
+    {
+        "lane": 1,
+        "tile": "forest",
+        "ids": [
+            5,
+            12,
+            13
+        ]
+    },
+    {
+        "lane": 1,
+        "tile": "plain",
+        "ids": [
+            6,
+            13,
+            14
+        ]
+    },
+    {
+        "lane": 2,
+        "tile": "farm",
+        "ids": [
+            7,
+            15,
+            16
+        ]
+    },
+    {
+        "lane": 2,
+        "tile": "earth",
+        "ids": [
+            8,
+            16,
+            17
+        ]
+    },
+    {
+        "lane": 2,
+        "tile": "lake",
+        "ids": [
+            9,
+            17,
+            18
+        ]
+    },
+    {
+        "lane": 2,
+        "tile": "forest",
+        "ids": [
+            10,
+            18,
+            19
+        ]
+    },
+    {
+        "lane": 2,
+        "tile": "plain",
+        "ids": [
+            11,
+            19,
+            20
+        ]
+    },
+    {
+        "lane": 2,
+        "tile": "lake",
+        "ids": [
+            12,
+            20,
+            21
+        ]
+    },
+    {
+        "lane": 2,
+        "tile": "earth",
+        "ids": [
+            13,
+            21,
+            22
+        ]
+    },
+    {
+        "lane": 3,
+        "tile": "forest",
+        "ids": [
+            17,
+            24,
+            25
+        ]
+    },
+    {
+        "lane": 3,
+        "tile": "earth",
+        "ids": [
+            18,
+            25,
+            26
+        ]
+    },
+    {
+        "lane": 3,
+        "tile": "farm",
+        "ids": [
+            20,
+            27,
+            28
+        ]
+    },
+    {
+        "lane": 3,
+        "tile": "forest",
+        "ids": [
+            21,
+            28,
+            29
+        ]
+    },
+    {
+        "lane": 4,
+        "tile": "lake",
+        "ids": [
+            23,
+            31,
+            32
+        ]
+    },
+    {
+        "lane": 4,
+        "tile": "plain",
+        "ids": [
+            24,
+            32,
+            33
+        ]
+    },
+    {
+        "lane": 4,
+        "tile": "farm",
+        "ids": [
+            25,
+            33,
+            34
+        ]
+    },
+    {
+        "lane": 4,
+        "tile": "lake",
+        "ids": [
+            26,
+            34,
+            35
+        ]
+    },
+    {
+        "lane": 4,
+        "tile": "forest",
+        "ids": [
+            27,
+            35,
+            36
+        ]
+    },
+    {
+        "lane": 4,
+        "tile": "earth",
+        "ids": [
+            28,
+            36,
+            37
+        ]
+    },
+    {
+        "lane": 4,
+        "tile": "plain",
+        "ids": [
+            29,
+            37,
+            38
+        ]
+    },
+    {
+        "lane": 5,
+        "tile": "earth",
+        "ids": [
+            32,
+            39,
+            40
+        ]
+    },
+    {
+        "lane": 5,
+        "tile": "forest",
+        "ids": [
+            33,
+            40,
+            41
+        ]
+    },
+    {
+        "lane": 5,
+        "tile": "plain",
+        "ids": [
+            34,
+            41,
+            42
+        ]
+    },
+    {
+        "lane": 5,
+        "tile": "farm",
+        "ids": [
+            35,
+            42,
+            43
+        ]
+    },
+    {
+        "lane": 5,
+        "tile": "lake",
+        "ids": [
+            36,
+            43,
+            44
+        ]
+    },
+    {
+        "lane": 5,
+        "tile": "forest",
+        "ids": [
+            37,
+            44,
+            45
+        ]
+    },
+    {
+        "lane": 5,
+        "tile": "farm",
+        "ids": [
+            38,
+            45,
+            46
+        ]
+    }
+]
