@@ -48,7 +48,7 @@
     pingTimeout: 3000,
     pingInterval: 3000,
   });
-  var port = process.argv[2] || 3002;
+  var port = process.env.PORT || 3000;
   var Promise = require("bluebird");
   var moment = require("moment");
   var Validator = require("validatorjs");
