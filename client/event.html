@@ -90,7 +90,7 @@
   
       // Use the given data to create  
       // the table and display it 
-      let response = await fetch('http://localhost:3002/db_data');
+      let response = await fetch('http://localhost:3000/db_data');
       let mydata = await response.json();
       $('table').bootstrapTable({ 
         data: mydata 
